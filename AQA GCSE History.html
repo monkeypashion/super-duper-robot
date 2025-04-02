@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Germany 1890–1945 Overview</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      background: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    #sidebar {
+      width: 220px;
+      background: #2a4b7c;
+      color: #fff;
+      padding: 1.5rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+    #sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    #sidebar li {
+      margin-bottom: 0.8rem;
+    }
+    #sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+    #sidebar a:hover {
+      text-decoration: underline;
+    }
+    #content {
+      flex: 1;
+      padding: 2rem;
+    }
+    h1 {
+      color: #2a4b7c;
+    }
+    h2 {
+      color: #2a4b7c;
+      background: #dbe3f4;
+      padding: 0.3rem 0.5rem;
+      border-left: 4px solid #2a4b7c;
+    }
+    .tooltip {
+      position: relative;
+      cursor: help;
+      border-bottom: 1px dotted #2a4b7c;
+      font-weight: bold;
+    }
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: #333;
+      color: #fff;
+      font-weight: normal;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      transform: translateY(6px);
+      white-space: normal;
+      max-width: 300px;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .tooltip:hover::after {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    strong.date {
+      font-weight: bold;
+      color: #000;
+    }
+      .active-section {
+      background: #fff7cc;
+      box-shadow: inset 4px 0 0 #d4af37;
+      transition: background 0.3s ease;
+    }
+    .topic-group h3 {
+    position: relative;
+  }
+  .topic-group h3::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+  .topic-group.open h3::after {
+    content: "▲";
+  }
+</style>
+</head>
+<body>
+  
+
+  <nav id="sidebar">
+    <style>
+      .topic-group { margin-bottom: 1.5rem; }
+      .topic-group h3 {
+        margin: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.3rem;
+        background: #1f3960;
+        border-left: 4px solid #fff;
+      }
+      .topic-group ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 1rem;
+        display: none;
+      }
+      .topic-group.open ul {
+        display: block;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.topic-group h3').forEach(header => {
+          header.addEventListener('click', () => {
+            const parent = header.parentElement;
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
+    <h2>Timeline</h2>
+    <div class="topic-group open">
+  <h3>Germany 1890–1945</h3>
+  <ul>
+    <li><a href="#kaiser">1888 – Kaiser Wilhelm II</a></li>
+    <li><a href="#ww1">1914 – WWI Begins</a></li>
+    <li><a href="#weimar">1919 – Weimar Republic</a></li>
+    <li><a href="#stresemann">1923 – Hyperinflation</a></li>
+    <li><a href="#stresemann">1924 – Stresemann Era</a></li>
+    <li><a href="#depression">1929 – Wall Street Crash</a></li>
+    <li><a href="#dictatorship">1933 – Hitler Becomes Chancellor</a></li>
+  </ul>
+</div>
+<div class="topic-group">
+  <h3>Cold War 1945–1972</h3>
+  <ul>
+    <li><a href="#coldwar-origins">1945–49 – Origins of the Cold War</a></li>
+    <li><a href="#coldwar-development">1950–60 – Development of the Cold War</a></li>
+    <li><a href="#coldwar-transformation">1961–72 – Transformation of the Cold War</a></li>
+  </ul>
+</div>
+<div class="topic-group">
+  <h3>Migration & Empire c790–present</h3>
+  <ul>
+    <li><a href="#empire-invasions">790–1453 – Conquest and Identity</a></li>
+    <li><a href="#empire-colonies">1492–1783 – Looking Westward</a></li>
+    <li><a href="#empire-expansion">1757–1902 – Empire in Asia & Africa</a></li>
+    <li><a href="#empire-20c">1914–Present – End of Empire & Legacy</a></li>
+  </ul>
+</div>
+<div class="topic-group">
+  <h3>Elizabethan England 1568–1603</h3>
+  <ul>
+    <li><a href="#elizabeth-court">1568–1601 – Court and Succession</a></li>
+    <li><a href="#elizabeth-life">1570s–80s – Life in Elizabethan England</a></li>
+    <li><a href="#elizabeth-conflict">1570s–1603 – Religion and Spain</a></li>
+  </ul>
+</div>
+    
+    
+    
+  </nav>
+
+  <main id="content">
+    <h1>Germany <strong class="date">1890–1945</strong>: Democracy and Dictatorship</h1>
+
+    <h2 id="kaiser">Kaiserreich & Prelude to Democracy</h2>
+<p>
+  Under <span class="tooltip" data-tooltip="Wilhelm II ruled from 1888 to 1918 with near-absolute power. His personal decisions often destabilised both domestic and foreign policy.">Kaiser Wilhelm</span>, Germany was an authoritarian empire. While there was a <span class="tooltip" data-tooltip="The Reichstag existed but had limited power. The Kaiser could overrule it and appoint/dismiss the Chancellor.">parliamentary government</span>, real power lay with the Kaiser. The state was shaped by <span class="tooltip" data-tooltip="Prussia had long dominated German politics. Its military values of obedience and nationalism were central to German identity.">Prussian militarism</span> and driven by rapid <span class="tooltip" data-tooltip="Germany industrialised quickly, especially in coal, steel and chemicals. This caused urbanisation and tensions with old elites.">industrialisation</span>. Social tensions grew, leading to attempts at <span class="tooltip" data-tooltip="Legislation introduced to improve worker conditions aimed to reduce support for the socialist movement.">social reform</span> and rising support for <span class="tooltip" data-tooltip="The SPD became the largest party by 1912, advocating for workers' rights and democracy.">socialism</span>. Ambitious <span class="tooltip" data-tooltip="Laws passed to build a large navy to rival Britain, reflecting Germany's desire for global status.">Navy Laws</span> reflected Germany's desire to rival Britain as a naval power.
+</p>
+
+<h2 id="ww1">First World War & Aftermath</h2>
+<p>
+  The First World War left Germany in ruins. The <span class="tooltip" data-tooltip="Germany lost over 2 million soldiers. Civilians faced hunger due to the British blockade.">impact of the war</span> included <span class="tooltip" data-tooltip="By 1917-18, civilian morale collapsed. Protests and mutinies spread across Germany.">war weariness</span>, severe <span class="tooltip" data-tooltip="Germany was bankrupt. The cost of war and reparations created lasting instability.">economic problems</span>, and a sense of <span class="tooltip" data-tooltip="Germany was forced to accept full blame for the war in the Treaty of Versailles.">defeat</span> which led to the <span class="tooltip" data-tooltip="Wilhelm II abdicated in November 1918, ending 500 years of monarchy.">end of the monarchy</span>. The harsh <span class="tooltip" data-tooltip="The Treaty of Versailles demanded £6.6 billion in reparations, seen by many Germans as unjust.">reparations</span> imposed by the Treaty of Versailles and the <span class="tooltip" data-tooltip="France occupied the Ruhr in 1923 after Germany missed payments. Workers went on strike; the government printed money to support them.">occupation of the Ruhr</span> only worsened the crisis. The resulting <span id="hyperinflation" class="tooltip" data-tooltip="Prices spiralled so badly in 1923 that savings became worthless. Some Germans bartered instead of using money.">hyperinflation</span> destroyed public trust in the economy.
+</p>
+
+<h2 id="weimar">Weimar Republic: Unrest and Recovery</h2>
+<p>
+  The new <span class="tooltip" data-tooltip="Germany became a democratic republic in 1919, named after the town of Weimar where the constitution was written.">Weimar Republic</span> was born in crisis. Early years saw violent <span class="tooltip" data-tooltip="Groups on both the left and right violently opposed the new republic, challenging its authority.">political unrest</span>, with threats from the left like the <span class="tooltip" data-tooltip="Communist uprising in Berlin, January 1919, crushed by the army and Freikorps.">Spartacists</span> and from the right with the <span class="tooltip" data-tooltip="March 1920: a failed right-wing coup involving ex-soldiers and civil servants.">Kapp Putsch</span>. Even Hitler attempted a coup in the <span class="tooltip" data-tooltip="Hitler's 1923 failed attempt to seize power in Munich; he was imprisoned and wrote Mein Kampf.">Munich Putsch</span>. However, from <strong class="date">1924–1929</strong>, the Republic stabilised under <span class="tooltip" data-tooltip="A moderate politician who helped stabilise Germany's economy and improve foreign relations.">Stresemann</span>.
+</p>
+<p id="stresemann">
+  Key measures included a new <span class="tooltip" data-tooltip="The Rentenmark replaced the worthless mark in 1923, restoring confidence in the economy.">currency</span>, economic plans like the <span class="tooltip" data-tooltip="1924: US loans helped Germany pay reparations and rebuild industry.">Dawes Plan</span> and later the <span class="tooltip" data-tooltip="1929: reduced total reparations, but came just before the Wall Street Crash.">Young Plan</span>. Internationally, Germany signed agreements that improved its status, such as the <span class="tooltip" data-tooltip="1925: Germany, France, and Belgium agreed to respect post-war borders.">Locarno Pact</span> and joined the <span class="tooltip" data-tooltip="Germany was admitted to the League of Nations in 1926, signalling its diplomatic rehabilitation.">League of Nations</span>. Culturally, this was a time of experimentation and liberalism, known as <span class="tooltip" data-tooltip="Art, cinema, architecture and nightlife flourished, but were seen by conservatives as decadent.">Weimar culture</span>.
+</p>
+
+<h2 id="depression">Germany and the Depression</h2>
+<p>
+  The <span class="tooltip" data-tooltip="After the 1929 Wall Street Crash, US loans stopped. German businesses collapsed and unemployment soared.">Great Depression</span> had devastating effects on Germany. Support grew rapidly for <span class="tooltip" data-tooltip="Voters turned to parties promising radical change — especially the Nazis and Communists.">extremist parties</span> between <strong class="date">1928</strong> and <strong class="date">1932</strong>, with the Nazis using the <span class="tooltip" data-tooltip="Paramilitary wing of the Nazi Party that intimidated opponents and stirred up unrest.">SA</span> to project strength and fear. <span class="tooltip" data-tooltip="He promised to restore pride, rebuild the economy and punish those blamed for Germany's problems.">Hitler's appeal</span> helped fuel their rise.
+</p>
+<p>
+  As the <span class="tooltip" data-tooltip="Democracy appeared weak and indecisive; governments were short-lived and ineffective.">Weimar system failed</span> to deliver solutions, key figures like <span class="tooltip" data-tooltip="Conservative politician who tried to control Hitler by making him part of government.">Papen</span> and <span class="tooltip" data-tooltip="President of Germany who reluctantly appointed Hitler Chancellor in January 1933.">Hindenburg</span> enabled Hitler’s rise, culminating in his appointment as Chancellor in <strong class="date">1933</strong>.
+</p>
+
+<h2 id="dictatorship">Establishment of Hitler’s Dictatorship</h2>
+<p>
+  After Hitler’s appointment as Chancellor in <strong class="date">1933</strong>, the Nazis moved quickly to secure power. The <span class="tooltip" data-tooltip="27 February 1933: the Reichstag building was set on fire. Nazis blamed communists, using it to justify emergency powers.">Reichstag Fire</span> allowed Hitler to suppress opposition and pass the <span class="tooltip" data-tooltip="Passed in March 1933, this law let Hitler pass laws without Reichstag approval, creating a legal dictatorship.">Enabling Act</span>, giving him legislative power. Political <span class="tooltip" data-tooltip="Other political parties were banned or intimidated into dissolving themselves by July 1933.">opposition</span> was removed and <span class="tooltip" data-tooltip="Independent trade unions were banned and replaced with the German Labour Front.">trade unions</span> were abolished.
+</p>
+<p>
+  In <strong class="date">1934</strong>, Hitler targeted internal threats with the <span class="tooltip" data-tooltip="30 June 1934: Hitler had Röhm and other SA leaders executed to appease the army and consolidate power.">Night of the Long Knives</span>, eliminating the SA leadership and rivals. When President Hindenburg died, Hitler declared himself <span class="tooltip" data-tooltip="From August 1934, Hitler combined the roles of Chancellor and President, taking full control as Führer.">Führer</span> of Germany, completing the creation of his dictatorship.
+</p>
+  <h2 id="nazi-experiences">The Experiences of Germans under the Nazis</h2>
+<p>
+  The Nazi regime introduced wide-ranging <span class="tooltip" data-tooltip="Nazi policies aimed to reduce unemployment through construction projects and military build-up.">economic changes</span>. Programmes like <span class="tooltip" data-tooltip="Autobahn construction, housing projects, and infrastructure expansion were used to create jobs.">public works</span> and <span class="tooltip" data-tooltip="Massive expansion of the army and weapons industry reduced unemployment and prepared Germany for war.">rearmament</span> reduced unemployment. The regime also promoted <span class="tooltip" data-tooltip="Germany sought to rely only on domestic resources through plans like the Four-Year Plan.">self-sufficiency</span>. During the war, the economy shifted to a war footing, with severe consequences for civilians including <span class="tooltip" data-tooltip="Bombing raids from 1942 destroyed cities and infrastructure.">bombing</span>, <span class="tooltip" data-tooltip="Food and goods were strictly rationed to prioritise the military.">rationing</span>, <span class="tooltip" data-tooltip="Millions of men were drafted into the army, leaving labour shortages in factories.">labour shortages</span> and the arrival of <span class="tooltip" data-tooltip="Displaced persons from occupied countries and areas affected by bombing or advancing armies.">refugees</span>.
+</p>
+<p>
+  Social policy focused on enforcing traditional roles. Women were encouraged to focus on the family and childbearing. <span class="tooltip" data-tooltip="The Nazi ideal promoted motherhood over employment, especially after 1933.">Women</span> were removed from many jobs and given awards for having many children. <span class="tooltip" data-tooltip="Organisations like the Hitler Youth and League of German Girls trained youth to be loyal to the regime.">Youth groups</span> became compulsory. Education was changed to promote Nazi ideology and loyalty to Hitler.
+</p>
+<p>
+  Religion was also controlled. The Nazis tried to coordinate Protestant churches under the <span class="tooltip" data-tooltip="A pro-Nazi group of Protestant churches aligned with the regime's values.">Reich Church</span> and suppressed dissent. Catholic churches retained some independence but were monitored closely.
+</p>
+<p>
+  Racial policies were central to Nazi ideology. The Nazis promoted <span class="tooltip" data-tooltip="The belief that Germans were part of a superior 'Aryan' race.">Aryan ideas</span> and enacted harsh <span class="tooltip" data-tooltip="Jews, Roma, disabled people, and others faced discrimination, violence, and removal from public life.">racial policies</span>. These escalated into the <span class="tooltip" data-tooltip="Nazi plan to murder all Jews in Europe through systematic genocide.">Final Solution</span> during the war, resulting in the mass murder of six million Jews.
+</p>
+<p>
+  The Nazis used extensive control mechanisms. <span class="tooltip" data-tooltip="He coordinated propaganda campaigns, rallies, radio broadcasts and films to promote Nazi ideas.">Goebbels</span> directed propaganda, while censorship restricted free speech. <span class="tooltip" data-tooltip="Cultural output was strictly controlled to reflect Nazi ideals of obedience and nationalism.">Nazi culture</span> promoted loyalty and unity. The police state was enforced by <span class="tooltip" data-tooltip="Himmler oversaw all Nazi security forces and was one of the main architects of the Holocaust.">Himmler</span>, the <span class="tooltip" data-tooltip="An elite paramilitary organisation loyal to Hitler, responsible for many war crimes.">SS</span> and the <span class="tooltip" data-tooltip="The secret police who used surveillance, informers, and torture to suppress opposition.">Gestapo</span>.
+</p>
+<p>
+  Despite fear and repression, some groups resisted the regime. These included student-led initiatives like the <span class="tooltip" data-tooltip="University students in Munich who distributed anti-Nazi leaflets; executed in 1943.">White Rose</span>, youth countercultures like the <span class="tooltip" data-tooltip="A group that rejected Nazi youth culture and listened to swing music.">Swing Youth</span> and <span class="tooltip" data-tooltip="Working-class youth who resisted conformity and sometimes engaged in sabotage.">Edelweiss Pirates</span>, and military resistance such as the <span class="tooltip" data-tooltip="An unsuccessful attempt to assassinate Hitler on 20 July 1944, led by Claus von Stauffenberg.">July 1944 bomb plot</span>.
+</p>
+<h1 style="color: #2a4b7c; margin-top: 4rem;">Conflict and Tension between East and West <strong class=\"date\">1945–1972</strong></h1>
+
+<h2 id="coldwar-origins">Origins of the Cold War</h2>
+<p>
+  After the Second World War, tensions grew between the USA and the USSR, shaped by differing <span class="tooltip" data-tooltip="The USA supported capitalism and democracy, while the USSR promoted communism and one-party rule.">ideologies</span> and ambitions. The <span class="tooltip" data-tooltip="Meetings in 1945 where Allied leaders discussed the post-war world. Yalta (Feb) was more cooperative; Potsdam (Jul) exposed tensions.">Yalta and Potsdam Conferences</span> highlighted these divisions. Germany was divided, and Stalin, Roosevelt, Churchill, Attlee, and Truman all played major roles. The <span class="tooltip" data-tooltip="The USA dropped atomic bombs on Hiroshima and Nagasaki in August 1945. It worsened Soviet mistrust.">dropping of the atom bomb</span> increased Soviet fears.
+</p>
+<p>
+  As Stalin expanded Soviet control over Eastern Europe, Churchill warned of an <span class="tooltip" data-tooltip="Churchill’s 1946 speech referred to the ideological divide across Europe, with Soviet control of the East.">Iron Curtain</span>. In response, the USA announced the <span class="tooltip" data-tooltip="Truman’s 1947 policy of containing communism, marking the start of active US involvement in Cold War politics.">Truman Doctrine</span> and launched the <span class="tooltip" data-tooltip="A $13 billion US aid programme for Europe, aiming to rebuild economies and resist communism.">Marshall Plan</span>, which Stalin saw as a threat. He countered with <span class="tooltip" data-tooltip="Set up in 1947 to coordinate Eastern Bloc communist parties and ensure loyalty to the USSR.">Cominform</span> and <span class="tooltip" data-tooltip="An economic organisation for Soviet-aligned countries, created in 1949 to rival the Marshall Plan.">Comecon</span>. Even <span class="tooltip" data-tooltip="A communist state under Tito that resisted full Soviet control, creating tension within the Eastern Bloc.">Yugoslavia</span> pursued a more independent path. The <span class="tooltip" data-tooltip="In 1948–49, Stalin blocked land access to West Berlin. The Allies responded with a massive airlift to supply the city.">Berlin Blockade and Airlift</span> became a major flashpoint.
+</p>
+
+<h2 id="coldwar-development">Development of the Cold War</h2>
+<p>
+  Events in Asia influenced superpower relations. The USSR supported <span class="tooltip" data-tooltip="Leader of the Chinese Communist Party, who took power in 1949 after civil war.">Mao Zedong</span> in China, and conflict followed in Korea and Vietnam. North Korea invaded the South in 1950, leading to <span class="tooltip" data-tooltip="A UN-led military effort led by the USA to defend South Korea from communist invasion.">UN military involvement</span>, while the <span class="tooltip" data-tooltip="Vietnamese communist fighters who fought against French and later US-supported forces.">Vietcong</span> resisted Western-backed control in Vietnam.
+</p>
+<p>
+  Military rivalry escalated through the <span class="tooltip" data-tooltip="Both superpowers developed large stockpiles of nuclear weapons, including H-bombs and ICBMs.">arms race</span>. The USA formed <span class="tooltip" data-tooltip="Established in 1949, a Western military alliance to resist Soviet aggression.">NATO</span>, and the USSR responded with the <span class="tooltip" data-tooltip="A Soviet-led military alliance formed in 1955 as a counter to NATO.">Warsaw Pact</span>. The <span class="tooltip" data-tooltip="The USA and USSR competed in space exploration to demonstrate technological superiority.">space race</span> saw milestones like <span class="tooltip" data-tooltip="Launched in 1957, it was the first artificial satellite, triggering the US to invest heavily in space technology.">Sputnik</span>, <span class="tooltip" data-tooltip="Missiles capable of delivering nuclear warheads across continents.">ICBMs</span>, <span class="tooltip" data-tooltip="A US submarine-launched nuclear missile system.">Polaris</span>, <span class="tooltip" data-tooltip="The first human in space, launched by the USSR in 1961.">Gagarin</span>, and the <span class="tooltip" data-tooltip="The US moon landing mission in 1969, seen as a major Cold War victory.">Apollo</span> programme.
+</p>
+<p>
+  The ‘Thaw’ referred to a temporary easing of tensions. In Hungary, <span class="tooltip" data-tooltip="Hungarian Prime Minister in 1956 who introduced reforms and tried to leave the Warsaw Pact.">Nagy</span> led a <span class="tooltip" data-tooltip="A 1956 uprising demanding political freedoms and Soviet withdrawal, crushed by the Red Army.">reform movement</span>. Soviet suppression had lasting consequences. Later, the <span class="tooltip" data-tooltip="In 1960, an American spy plane was shot down over the USSR, worsening relations.">U2 Crisis</span> sabotaged the Paris Peace Summit and stalled diplomatic progress.
+</p>
+
+<h2 id="coldwar-transformation">Transformation of the Cold War</h2>
+<p>
+  In <strong class="date">1961</strong>, the Soviets built the <span class="tooltip" data-tooltip="A physical barrier built to stop East Germans fleeing to the West, symbolising Cold War division.">Berlin Wall</span>. President <span class="tooltip" data-tooltip="US President 1961–63, known for his firm stance during the Berlin and Cuban crises.">Kennedy</span> responded with public shows of resolve.
+</p>
+<p>
+  Cuba became a hotspot after <span class="tooltip" data-tooltip="Overthrew the pro-US Batista regime in 1959 and aligned with the USSR.">Castro's revolution</span>. The failed <span class="tooltip" data-tooltip="1961 invasion attempt by US-backed Cuban exiles to overthrow Castro.">Bay of Pigs</span> invasion embarrassed the USA. Tensions peaked during the <span class="tooltip" data-tooltip="October 1962 crisis over Soviet nuclear missiles in Cuba, nearly causing nuclear war.">missile crisis</span>, involving <span class="tooltip" data-tooltip="Leader of the USSR during the Cuban Missile Crisis.">Khrushchev</span> and <span class="tooltip" data-tooltip="US President during the Cuban Missile Crisis, who negotiated a peaceful resolution.">Kennedy</span>. The crisis revealed the danger of escalation and led to increased communication.
+</p>
+<p>
+  In <strong class="date">1968</strong>, <span class="tooltip" data-tooltip="Czechoslovak leader who promoted liberal reforms and greater political freedom.">Dubček</span> launched the <span class="tooltip" data-tooltip="A 1968 reform movement in Czechoslovakia aiming to create 'socialism with a human face'.">Prague Spring</span>. The USSR responded harshly, reaffirming control through the <span class="tooltip" data-tooltip="Soviet policy justifying intervention in other socialist countries to maintain communism.">Brezhnev Doctrine</span>, straining East-West relations.
+</p>
+<p>
+  Despite ongoing issues like <span class="tooltip" data-tooltip="Western criticism of the USSR's harsh censorship, political imprisonment, and lack of freedom.">human rights abuses</span>, the late 1960s saw efforts at <span class="tooltip" data-tooltip="The easing of Cold War tensions, marked by cooperation and arms control agreements.">détente</span>. <span class="tooltip" data-tooltip="Strategic Arms Limitation Talks – SALT 1 was signed in 1972 to curb nuclear weapons development.">SALT 1</span> was signed, and leaders like <span class="tooltip" data-tooltip="General Secretary of the Soviet Communist Party, 1964–1982.">Brezhnev</span> and <span class="tooltip" data-tooltip="US President 1969–1974 who pursued détente and arms control with the USSR.">Nixon</span> promoted dialogue.
+</p>
+<h1 style="color: #2a4b7c; margin-top: 4rem;">Britain: Migration, Empires and the People <strong class="date">c790–present</strong></h1>
+
+<h2 id="empire-invasions">Conquest and Identity</h2>
+<p>
+  Britain’s story begins with <span class="tooltip" data-tooltip="The Vikings raided Britain from the late 8th century, eventually settling and establishing the Danelaw.">Viking invasions</span> and the emergence of the <span class="tooltip" data-tooltip="The Danelaw was an area of England under Viking control, formally recognised in a treaty with Alfred the Great.">Danelaw</span>. Figures like <span class="tooltip" data-tooltip="King of Wessex who resisted Viking incursions and laid foundations for a unified English identity.">Alfred of Wessex</span> and <span class="tooltip" data-tooltip="Ruled a North Sea empire including England, Denmark and Norway; married Emma of Normandy.">King Cnut</span> helped forge early political unity. The relationship between <span class="tooltip" data-tooltip="English kings controlled land in France, notably under Henry II and later King John.">England and France</span> developed through the <span class="tooltip" data-tooltip="A powerful dynasty originating from Henry II's marriage to Eleanor of Aquitaine, controlling large parts of France.">Angevin Empire</span>, involving rulers like <span class="tooltip" data-tooltip="Reigned 1154–1189, expanded control in France and Ireland, centralised royal authority.">Henry II</span> and <span class="tooltip" data-tooltip="Lost most French possessions and faced revolt at home. Signed Magna Carta in 1215.">King John</span>.
+</p>
+<p>
+  Conflicts such as the <span class="tooltip" data-tooltip="A prolonged conflict between England and France (1337–1453), which contributed to English national identity.">Hundred Years’ War</span> laid the groundwork for the development of an emerging English identity distinct from continental Europe.
+</p>
+
+<h2 id="empire-colonies">Looking Westward: Empire and Migration</h2>
+<p>
+  The rise of British influence in the Caribbean saw <span class="tooltip" data-tooltip="Seafarers who attacked Spanish ships and settlements, sometimes with government support.">piracy and plunder</span> turn into structured colonisation. The <span class="tooltip" data-tooltip="The transatlantic slave trade grew rapidly in the 17th century, with Britain becoming heavily involved in transporting enslaved Africans.">slave trade</span> brought wealth and suffering, with figures like <span class="tooltip" data-tooltip="An English merchant who was a pioneer of the British slave trade.">John Hawkins</span> playing a key role. Settlements in <span class="tooltip" data-tooltip="Island colonies such as Barbados became central to Britain's sugar economy, reliant on enslaved labour.">Barbados and the West Indies</span> fuelled Britain’s growing economic power.
+</p>
+<p>
+  Colonisation in North America followed, driven by figures like <span class="tooltip" data-tooltip="Funded early English attempts to colonise North America in the late 1500s.">Raleigh</span> and culminating in <span class="tooltip" data-tooltip="Established in 1607, Jamestown was the first successful English settlement in North America.">Jamestown</span>. Relations with <span class="tooltip" data-tooltip="Native populations encountered by English colonists, often leading to conflict and displacement.">indigenous peoples</span>, the rise of <span class="tooltip" data-tooltip="Goods like tobacco, cotton and sugar helped shape colonial economies and British trade.">commodities</span>, and migration of <span class="tooltip" data-tooltip="People who signed contracts to work for a period in exchange for passage to the Americas.">indentured servants</span> all played a part. The <span class="tooltip" data-tooltip="Britain lost its American colonies after the War of Independence (1775–1783).">loss of the American colonies</span> was a turning point.
+</p>
+<p>
+  Migration within and to Britain included the <span class="tooltip" data-tooltip="French Protestants who fled persecution after the revocation of the Edict of Nantes.">Huguenots</span>, the <span class="tooltip" data-tooltip="Displacement of Highland Scots, particularly after the Jacobite uprisings.">Highland clearances</span>, and <span class="tooltip" data-tooltip="Protestant colonisation of Ireland by settlers from Britain in the 16th and 17th centuries.">Ulster plantations</span>, reshaping communities across Britain and Ireland.
+</p>
+
+<h2 id="empire-expansion">Empire: East, South, and Africa</h2>
+<p>
+  In India, the <span class="tooltip" data-tooltip="A British company that traded in the East and gradually took over political control of Indian regions.">East India Company</span> became a powerful force. Figures like <span class="tooltip" data-tooltip="Secured British control at Plassey in 1757, laying foundations for British rule.">Robert Clive</span> and <span class="tooltip" data-tooltip="First Governor-General of India, played a key role in shaping British governance there.">Warren Hastings</span> expanded control, but the <span class="tooltip" data-tooltip="A widespread uprising in 1857 against British rule, also known as the First War of Independence.">Indian Rebellion</span> exposed tensions. Empire reshaped <span class="tooltip" data-tooltip="India contributed to British culture (food, fashion, language), while empire impacted Indian society and economy.">both India and Britain</span>.
+</p>
+<p>
+  British expansion in Africa saw involvement in <span class="tooltip" data-tooltip="British merchants and missionaries pushed for trade and religious conversion in Africa.">trade and missionary work</span>, with significant activity in <span class="tooltip" data-tooltip="British colonial involvement here included strategic interest in the Suez Canal and trade routes.">Egypt</span> and <span class="tooltip" data-tooltip="Conflicts with Dutch settlers and later war with the Zulus; part of wider imperial aims.">South Africa</span>. The <span class="tooltip" data-tooltip="A rapid, competitive claim over African territories by European powers in the late 19th century.">Scramble for Africa</span> was epitomised by <span class="tooltip" data-tooltip="British imperialist and diamond magnate, associated with colonialism in southern Africa.">Cecil Rhodes</span> and the <span class="tooltip" data-tooltip="Conflict from 1899 to 1902 between the British Empire and Boer settlers; marked by use of concentration camps.">Boer War</span>, often promoted via <span class="tooltip" data-tooltip="Images, books and speeches that glorified empire and British superiority.">imperial propaganda</span>.
+</p>
+<p>
+  Migration patterns broadened: <span class="tooltip" data-tooltip="Large-scale movement of Irish people to Britain, especially during and after the Great Famine.">Irish migration</span>, <span class="tooltip" data-tooltip="Many Jews fled persecution in Eastern Europe and settled in Britain from the 19th century.">Jewish migration</span>, and <span class="tooltip" data-tooltip="Britain used penal transportation to send convicts to colonies like Australia.">transportation</span> changed Britain's population. Movements included <span class="tooltip" data-tooltip="South Asians moved to British colonies in Africa to work in trade and labour.">Asians to Africa</span> and rural-urban shifts within Britain.
+</p>
+
+<h2 id="empire-20c">The 20th Century and Beyond</h2>
+<p>
+  Two world wars hastened the <span class="tooltip" data-tooltip="Post-1945, Britain lost control over many colonies due to war exhaustion, economic pressures, and rising nationalism.">end of Empire</span>. The <span class="tooltip" data-tooltip="Britain’s 1956 invasion of Egypt (with France and Israel) over the Suez Canal ended in political failure.">Suez Crisis</span> symbolised decline. Nationalist leaders like <span class="tooltip" data-tooltip="Led Indian independence through non-violent resistance.">Gandhi</span>, <span class="tooltip" data-tooltip="Led Ghana to independence, the first African country to do so (1957).">Nkrumah</span> and <span class="tooltip" data-tooltip="Key figure in Kenyan independence; later its president.">Kenyatta</span> reshaped Africa and Asia.
+</p>
+<p>
+  Post-colonial Britain saw immigration from the <span class="tooltip" data-tooltip="Named after the ship that brought one of the first large groups of West Indian migrants to Britain in 1948.">Windrush generation</span>. Activists like <span class="tooltip" data-tooltip="Political activist and journalist who campaigned for Black civil rights in Britain.">Claudia Jones</span> helped define new British identities. Migration from <span class="tooltip" data-tooltip="Expulsion of Asians from Uganda by Idi Amin in 1972 led to refugee resettlement in Britain.">Asia and Africa</span>, the <span class="tooltip" data-tooltip="An association of former British colonies and current territories, promoting shared values and cooperation.">Commonwealth</span>, and events like the <span class="tooltip" data-tooltip="1982 conflict between Britain and Argentina over the Falkland Islands.">Falklands War</span> show empire’s continued relevance.
+</p>
+<p>
+  Britain’s relationship with Europe was shaped by war and trade. After the Second World War, economic and social links grew, culminating in <span class="tooltip" data-tooltip="Britain joined the EEC (now EU) in 1973. This changed migration, trade, and political dynamics.">membership of the EU</span>. Migration patterns included <span class="tooltip" data-tooltip="European migrants (e.g. from Poland) came to the UK in significant numbers, especially after EU expansion.">European</span> and <span class="tooltip" data-tooltip="Migration from Asia and Africa continued post-independence, reshaping British society.">non-European</span> movement.
+</p>
+<h1 style="color: #2a4b7c; margin-top: 4rem;">Elizabethan England <strong class="date">c1568–1603</strong></h1>
+
+<h2 id="elizabeth-court">Elizabeth’s Court and Succession</h2>
+<p>
+  <span class="tooltip" data-tooltip="Daughter of Henry VIII and Anne Boleyn, Elizabeth ruled England from 1558 to 1603.">Elizabeth I</span> was a skilled ruler whose <span class="tooltip" data-tooltip="Elizabeth was well-educated, politically astute, and cultivated a powerful image of herself as the ‘Virgin Queen’.">character and background</span> shaped her rule. Her court centred on key figures and was based around <span class="tooltip" data-tooltip="A system where loyalty was rewarded with titles and influence, helping Elizabeth maintain control.">patronage</span>. Key ministers helped govern but she maintained final authority.
+</p>
+<p>
+  As a <span class="tooltip" data-tooltip="England had never been ruled long-term by a woman; many questioned her ability and feared instability.">female monarch</span>, Elizabeth faced pressure to marry and produce an heir. Tensions with <span class="tooltip" data-tooltip="Parliament pressed Elizabeth on marriage and succession, which she resisted.">Parliament</span> persisted throughout her reign. By the end of her rule, her authority had waned slightly, shown in events like <span class="tooltip" data-tooltip="The Earl of Essex rebelled against Elizabeth in 1601 after falling from favour; it failed and he was executed.">Essex’s Rebellion</span>.
+</p>
+
+<h2 id="elizabeth-life">Life in Elizabethan Times</h2>
+<p>
+  Elizabeth’s reign is often seen as a <span class="tooltip" data-tooltip="A time of prosperity, cultural flowering, and rising gentry influence.">‘Golden Age’</span>, with improvements in <span class="tooltip" data-tooltip="Rising wages, trade, and availability of goods improved quality of life for some.">living standards</span>, and the rise of the <span class="tooltip" data-tooltip="Wealthy landowners who gained influence in Elizabethan politics and society.">gentry</span>. Cultural achievement peaked in <span class="tooltip" data-tooltip="Theatre flourished under Elizabeth, with figures like Shakespeare producing influential works.">theatre</span>, though not all supported it.
+</p>
+<p>
+  Poverty was growing, driven by <span class="tooltip" data-tooltip="Population growth, enclosure, and inflation caused rising unemployment and homelessness.">economic changes</span>. The government introduced laws to address the <span class="tooltip" data-tooltip="The ‘deserving’ poor were helped; ‘undeserving’ poor were punished. The problem was seen as a threat to order.">problem of the poor</span>.
+</p>
+<p>
+  English <span class="tooltip" data-tooltip="Sailors who explored and raided Spanish ships, including Hawkins and Drake.">sailors</span> played a key role in expanding trade and challenging Spanish power. <span class="tooltip" data-tooltip="Drake completed a circumnavigation between 1577–1580, becoming a national hero.">Drake’s circumnavigation</span> demonstrated English naval prowess. <span class="tooltip" data-tooltip="Promoted colonisation efforts, including the failed Roanoke colony.">Raleigh</span> promoted overseas ventures.
+</p>
+
+<h2 id="elizabeth-conflict">Religious Division and Foreign Threats</h2>
+<p>
+  Religion remained divisive. Elizabeth’s <span class="tooltip" data-tooltip="The Elizabethan Religious Settlement of 1559 aimed to unite the country under a moderate Protestant Church.">settlement</span> faced opposition from <span class="tooltip" data-tooltip="Though outwardly conforming, many Catholics remained loyal to the Pope.">Catholics</span> and radical <span class="tooltip" data-tooltip="Protestants who wanted to purify the Church of England of remaining Catholic elements.">Puritans</span>. Threats included the <span class="tooltip" data-tooltip="Catholic nobles in northern England rose up in 1569 but were defeated.">Northern Rebellion</span>, plots backed by foreign powers, and her <span class="tooltip" data-tooltip="The Pope excommunicated Elizabeth in 1570, encouraging Catholic resistance.">excommunication</span>. In response, the state persecuted <span class="tooltip" data-tooltip="Priests trained abroad returned to England to support Catholics, risking execution.">missionaries</span> and punished conspirators.
+</p>
+<p>
+  <span class="tooltip" data-tooltip="Mary was a Catholic figurehead and legitimate claimant to the English throne.">Mary, Queen of Scots</span> was a constant threat. Parliament urged Elizabeth to act. After plots involving her were uncovered, her <span class="tooltip" data-tooltip="Mary was executed in 1587, ending hopes of a Catholic restoration in England.">execution</span> had wide consequences.
+</p>
+<p>
+  Tensions with <span class="tooltip" data-tooltip="Religious and political rivalry with Catholic Spain led to open conflict.">Spain</span> escalated over trade, piracy, and Catholic plots. War broke out, culminating in the <span class="tooltip" data-tooltip="A failed 1588 attempt by Spain to invade England. English naval tactics and bad weather played a role in victory.">Spanish Armada</span>. The conflict boosted Elizabeth’s prestige and demonstrated England’s growing naval power.
+</p>
+</main>
+<script>
+  const timelineLinks = document.querySelectorAll('#sidebar a');
+  const sectionHeaders = document.querySelectorAll('#content h2');
+
+  timelineLinks.forEach(link => {
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    link.addEventListener('mouseover', () => {
+      if (targetSection) {
+        targetSection.classList.add('active-section');
+      }
+    });
+
+    link.addEventListener('mouseout', () => {
+      if (targetSection) {
+        targetSection.classList.remove('active-section');
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
