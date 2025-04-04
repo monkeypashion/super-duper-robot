@@ -109,6 +109,36 @@
 </head>
 <body>
   <nav id="sidebar">
+        <style>
+      .topic-group { margin-bottom: 1.5rem; }
+      .topic-group h3 {
+        margin: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.3rem;
+        background: #1f3960;
+        border-left: 4px solid #fff;
+      }
+      .topic-group ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 1rem;
+        display: none;
+      }
+      .topic-group.open ul {
+        display: block;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.topic-group h3').forEach(header => {
+          header.addEventListener('click', () => {
+            const parent = header.parentElement;
+            parent.classList.toggle('open');
+          });
+        });
+      });
+    </script>
     <h2>AQA GCSE Geography</h2>
     <div class="topic-group open">
       <h3>Living with the Physical Environment</h3>
